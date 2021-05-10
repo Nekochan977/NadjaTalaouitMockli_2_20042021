@@ -95,7 +95,19 @@ a:visited {
   height: 50vh;
 }
 #recherche h2 {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 0.5rem 0;
+  font-family: "RalewayMed";
+  color: #000;
+}
+#recherche p {
+  margin-bottom: 1rem;
+}
+.icone {
+  position: absolute;
+  width: 4.5rem;
+  height: 2rem;
+  background-color: rgb(149, 158, 157);
+  border-radius: 5px 0 0 5px;
 }
 
 
