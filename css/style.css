@@ -70,17 +70,12 @@ a {
   color: #404040; 
 } */
 
-a:hover {
+a:hover, a:focus {
   color: #0065FC; 
   font-family: "RalewayMed", sans-serif;
 }
-a:active {
-  color: #0065FC; 
-  font-family: "RalewayBold", sans-serif;
-}
-a:visited {
-  color: #0065FC; 
-}
+
+
 
 #logo {
   flex: 2 1 40rem;
@@ -102,12 +97,32 @@ a:visited {
 #recherche p {
   margin-bottom: 1rem;
 }
+
+.villes form {
+  display: inline-flex;
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  padding: 1rem;
+}
 .icone {
   position: absolute;
-  width: 4.5rem;
-  height: 2rem;
+  color: red;
+  width: 3.5rem;
+  height: 3rem;
   background-color: rgb(149, 158, 157);
   border-radius: 5px 0 0 5px;
+}
+.icone i {
+  position: relative;
+  font-size: 1.5rem;
+  left: 1rem;
+  top: 0.8rem;
+}
+choix-villes {
+  margin-left: 7rem;
+  width: 3.5rem;
+  height: 3rem;
 }
 
 
