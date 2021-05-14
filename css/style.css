@@ -210,7 +210,7 @@ i {
   font-family: "RalewayBold";
   color: #000;
 }
-.selection1 {
+.selection {
   width: 22rem;
   height: 20rem;
   background-color: #fff;
@@ -218,105 +218,19 @@ i {
   align-items: center;
   border-radius: 10px;
 }
-.selection1 img{
+.selection img{
   width: 20rem;
   margin: 0.5rem 1rem;
   align-items: center;
   border-radius: 10px 10px 0 0;
 }
-.selection1 h3, p, i {
+.selection h3, p, i {
   margin: 0 0 0.5rem 1rem;
 }
-.selection1 i {
+.selection i {
   color: #0065FC;
 }
-.selection2 {
-  width: 22rem;
-  height: 20rem;
-  background-color: #fff;
-  object-fit: contain;
-  align-items: center;
-  border-radius: 10px;
-}
-.selection2 img{
-  width: 20rem;
-  margin: 0.5rem 1rem;
-  align-items: center;
-  border-radius: 10px 10px 0 0;
-}
-.selection2 h3, p, i {
-  margin: 0 0 0.5rem 1rem;
-}
-.selection2 i {
-  color: #0065FC;
-}
-.selection3 {
-  width: 22rem;
-  height: 20rem;
-  background-color: #fff;
-  object-fit: contain;
-  align-items: center;
-  border-radius: 10px;
-}
-.selection3 img{
-  width: 20rem;
-  margin: 0.5rem 1rem;
-  align-items: center;
-  border-radius: 10px 10px 0 0;
-}
-.selection3 h3, p, i {
-  margin: 0 0 0.5rem 1rem;
-  
-}
-.selection4 {
-  width: 22rem;
-  height: 20rem;
-  background-color: #fff;
-  object-fit: contain;
-  align-items: center;
-  border-radius: 10px;
-}
-.selection4 img{
-  width: 20rem;
-  margin: 0.5rem 1rem;
-  align-items: center;
-  border-radius: 10px 10px 0 0;
-}
-.selection4 h3, p, i {
-  margin: 0 0 0.5rem 1rem;
-}
-.selection5 {
-  width: 22rem;
-  height: 20rem;
-  background-color: #fff;
-  object-fit: contain;
-  align-items: center;
-  border-radius: 10px;
-}
-.selection5 img{
-  width: 20rem;
-  margin: 0.5rem 1rem;
-  align-items: center;
-  border-radius: 10px 10px 0 0;
-}
-.selection5 h3, p, i {
-  margin: 0 0 0.5rem 1rem;
-}
-.selection6 {
-  width: 22rem;
-  height: 20rem;
-  background-color: #fff;
-  border-radius: 10px;
-}
-.selection6 img{
-  width: 20rem;
-  margin: 0.5rem 1rem;
-  object-fit: contain;
-  border-radius: 10px 10px 0 0;
-}
-.selection6 h3, p, i {
-  margin: 0 0 0.5rem 1rem;
-}
+
 
 
 
