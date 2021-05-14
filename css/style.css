@@ -66,6 +66,9 @@ a {
   list-style: none;
   font-family: "RalewayLight", sans-serif;
 }
+#nav-bar .bold {
+  font-family: "RalewayBold";
+}
 /* a:link {
   color: #404040; 
 } */
@@ -74,8 +77,6 @@ a:hover, a:focus {
   color: #0065FC; 
   font-family: "RalewayMed", sans-serif;
 }
-
-
 
 #logo {
   flex: 2 1 40rem;
@@ -86,43 +87,235 @@ a:hover, a:focus {
 
 /* SECTION RECHERCHE */
 
+      /* CHOIX VILLES */
+
 #recherche {
-  height: 50vh;
+  height: 30vh;
+  margin-top: 2rem;
 }
 #recherche h2 {
   padding: 1rem 0 0.5rem 0;
-  font-family: "RalewayMed";
+  font-family: "RalewayBold";
   color: #000;
 }
 #recherche p {
   margin-bottom: 1rem;
 }
-
-.villes form {
-  display: inline-flex;
-  position: relative;
-  height: 5rem;
-  width: 100%;
-  padding: 1rem;
+.villes {
+  /* padding: 1rem 0; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  
 }
-.icone {
+.icon-input-button {
+  position: relative;
+  border: 1px solid #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  font-family: "RalewayBold";
+  color: #000;
+}
+.icon-input-button i, 
+input, 
+button {
+  height: 38px;
+  padding: 1.5rem 1.5rem;
+  font-size: 100%;
+  
+}
+.icon-input-button i {
+  background-color: #F2F2F2;
+  font-size: 10.5px;
+  border-radius: 10px 0 0 10px;
   position: absolute;
-  color: red;
-  width: 3.5rem;
-  height: 3rem;
-  background-color: rgb(149, 158, 157);
-  border-radius: 5px 0 0 5px;
+  margin: 0;
+  
 }
-.icone i {
+.icon-input-button input {
+  margin-left: 3rem;
+  border: none;
+  outline: none;
+  font-family: "RalewayMed";
+  color: #000;
+  /* font-size: 1.6rem; */
+}
+.icon-input-button button {
+  position: absolute;
+  border-radius: 0 10px 10px 0;
+  background-color: #0065FC;
+  color: white;
+  outline: none;
+  border: solid 2px #0065FC;
+  font-family: "RalewayMed";
+  /* font-size: 1.6rem; */
+ 
+}
+
+      /* FILTRES */
+
+.filtres-cat {
+  display: flex;
   position: relative;
-  font-size: 1.5rem;
-  left: 1rem;
-  top: 0.8rem;
+  margin: 1rem 0;
+  justify-content: space-between;
+  z-index: 2 1 20px;
 }
-choix-villes {
-  margin-left: 7rem;
-  width: 3.5rem;
-  height: 3rem;
+.filtres-cat button {
+  border-radius: 30px;
+  border: 1px solid #F2F2F2;
+  background: none;
+  font-family: "RalewayBold";
+  z-index: 1 1 40px;
+  /* padding: 1rem; */
+  
+}
+.fa-circle {
+  font-size: 2.5rem;
+  color: #DEEBFF;
+  margin: 0;
+  position: relative;
+}
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog {
+  color: #0065FC;
+  position: absolute;
+}
+.fa-stack {
+  font-size: 0.5rem;
+}
+i {
+  vertical-align: middle;
+}
+
+/* SECTION HEBERGEMENTS */
+
+#hebergements {
+ 
+  width: 60%;
+  margin-right: 0;
+  padding: 4rem 2rem;
+  background-color: #F2F2F2;
+  border-radius: 30px;
+}
+.grid-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+}
+#hebergements h2 {
+  padding: 1rem 0 0.5rem 0;
+  font-family: "RalewayBold";
+  color: #000;
+}
+.selection1 {
+  width: 22rem;
+  height: 20rem;
+  background-color: #fff;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+}
+.selection1 img{
+  width: 20rem;
+  margin: 0.5rem 1rem;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+.selection1 h3, p, i {
+  margin: 0 0 0.5rem 1rem;
+}
+.selection1 i {
+  color: #0065FC;
+}
+.selection2 {
+  width: 22rem;
+  height: 20rem;
+  background-color: #fff;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+}
+.selection2 img{
+  width: 20rem;
+  margin: 0.5rem 1rem;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+.selection2 h3, p, i {
+  margin: 0 0 0.5rem 1rem;
+}
+.selection2 i {
+  color: #0065FC;
+}
+.selection3 {
+  width: 22rem;
+  height: 20rem;
+  background-color: #fff;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+}
+.selection3 img{
+  width: 20rem;
+  margin: 0.5rem 1rem;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+.selection3 h3, p, i {
+  margin: 0 0 0.5rem 1rem;
+  
+}
+.selection4 {
+  width: 22rem;
+  height: 20rem;
+  background-color: #fff;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+}
+.selection4 img{
+  width: 20rem;
+  margin: 0.5rem 1rem;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+.selection4 h3, p, i {
+  margin: 0 0 0.5rem 1rem;
+}
+.selection5 {
+  width: 22rem;
+  height: 20rem;
+  background-color: #fff;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+}
+.selection5 img{
+  width: 20rem;
+  margin: 0.5rem 1rem;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+.selection5 h3, p, i {
+  margin: 0 0 0.5rem 1rem;
+}
+.selection6 {
+  width: 22rem;
+  height: 20rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.selection6 img{
+  width: 20rem;
+  margin: 0.5rem 1rem;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+}
+.selection6 h3, p, i {
+  margin: 0 0 0.5rem 1rem;
 }
 
 
