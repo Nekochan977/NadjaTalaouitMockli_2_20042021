@@ -12,84 +12,157 @@
 </head>
 <body>
     
-    <!-- MAIN-HEAD -->
-     <header class="main-head">
-       <!-- NAV-BAR -->
-        <nav id="nav-bar">
-            <div id="logo">
-                <img src="/images/logo/Reservia.svg" alt="">
-            </div>
+<!-- MAIN-HEAD -->
+<header class="main-head">
+    <!-- NAV-BAR -->
+    <nav id="nav-bar">
+        <div id="logo">
+            <img src="/images/logo/Reservia.svg" alt="">
+        </div>
             <ul>
-                <li><a href="#">Hébergements</a></li>
+                <li><a href="#hebergements">Hébergements</a></li>
                 <li><a href="#">Activités</a></li>
-                <li><a href="#">S'inscrire</a></li>
+                <li><a class="bold" href="#">S'inscrire</a></li>
             </ul>
-        </nav>  <!-- END OF NAV-BAR -->
-    </header> <!-- END OF MAIN-HEAD -->
+    </nav>  <!-- END OF NAV-BAR -->
+</header> <!-- END OF MAIN-HEAD -->
     
-    <!-- MAIN -->
+<!-- MAIN -->
    
-    <main>
-        <!-- RECHERCHE -->
-        <section id="recherche">
-            
-            <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
-            <p>En plein centre ville ou en pleine nature</p>
+<main>
+    <!-- SECTION1 RECHERCHE -->
+    <section id="recherche">
+        <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+        <p>En plein centre ville ou en pleine nature</p>
 
-            <!-- VILLES -->
-            <div class="villes">
-                <form action="" method="get" >
-                    <label for="villes">
-                        <div class="icone">
+        <!-- VILLES -->
+        <div class="villes">
+            <form action="" method="get">
+                <label for="icon-input">
+                    <div class="icon-input-button">
                         <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <input class="choix-villes" name="villes" type="search" placeholder="Ex. Marseille" />
-                    </label>
-                    <button>Recherchez</button>
-                </form>
-            </div> <!-- END OF VILLES-->
+                        <input type="search" placeholder="Ex. Paris">
+                        <button>Rechercher</button>
+                    </div>
+                </label>
+            </form>
+        </div> <!-- END OF VILLES-->
 
-            <!-- FILTRES -->
-            <div class="filtres-cat"> <!-- Vraiment la bonne disposition ?-->
-                <p>Filtres </p>
-                
-                <button>
-                    <span class="button-fas">
+        <!-- FILTRES -->
+        <div class="filtres-cat"> <!-- Vraiment la bonne disposition ?-->
+            <h2>Filtres </h2>
+
+            <!-- BTN ECO -->
+            <button>
+                <span class="button-fas">
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-money-bill-wave"></i>Economique
                 </span>
-                </button>
-                <button>
-                    <span class="button-fas">
+            </button> <!-- END OF BTN ECO-->
+            <!-- BTN FAM -->
+            <button>
+                <span class="button-fas">
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-child"></i>Familial
                 </span>
-                </button>
-                <button>
-                    <span class="button-fas"></span>
+            </button> <!-- END OF BTN FAM-->
+            <!-- BTN ROM -->
+            <button>
+                <span class="button-fas"></span>
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-heart"></i>Romantique
                 </span>
-                </button>
-                <button>
-                    <span class="button-fas"></span>
+            </button> <!-- END OF BTN ROM-->
+            <!-- BTN ANI -->
+            <button>
+                <span class="button-fas"></span>
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-dog"></i>Animaux autorisés
                 </span>
-                </button>
-            </div> <!-- END OF FILTRES -->
+            </button><!-- END OF BTN ANI-->
+        </div> <!-- END OF FILTRES -->
 
-            <!-- INFO -->
-            <div class="info">
-                <h3><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</h3>
-            </div>  <!-- END OF INFO -->
-        </section> <!-- END OF HEBERGEMENTS -->
+        <!-- INFO -->
+        <div class="info">
+            <h3><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</h3>
+        </div>  <!-- END OF INFO -->
+    </section> <!-- END OF SECTION1 RECHERCHES -->
 
-       
+    <!-- SECTION HEBERGEMENTS -->
+    <section id="hebergements">
+        <h2>Hébergements à Marseille</h2>
+            
+        <div class="grid-container">
+            <!-- SELECTION 1 -->
+            <div class="selection1"> 
+                <a href="#">
+                    <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de <b>25€</b></p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </a>
+            </div> <!-- END OF SELECTION 1 -->
+             <!-- SELECTION 2 -->
+            <div class="selection2"> 
+                <a href="#">
+                    <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de <b>25€</b></p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </a>
+            </div> <!-- END OF SELECTION 2 -->
+            <!-- SELECTION 3 -->
+            <div class="selection3"> 
+                <a href="#">
+                    <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de <b>25€</b></p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </a>
+            </div> <!-- END OF SELECTION 3 -->
+           <!-- SELECTION 4 -->
+            <div class="selection4"> 
+                <a href="#">
+                    <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de <b>25€</b></p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </a>
+            </div> <!-- END OF SELECTION 4 -->
+            <!-- SELECTION 5 -->
+            <div class="selection5"> 
+                <a href="#">
+                    <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de <b>25€</b></p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </a>
+            </div> <!-- END OF SELECTION 5 -->
+           <!-- SELECTION 6 -->
+            <div class="selection6"> 
+                <a href="#">
+                    <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                    <h3>Auberge la Cannebière</h3>
+                    <p>Nuit à partir de <b>25€</b></p>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </a>
+            </div> <!-- END OF SELECTION 6 -->
+            
+        </div> <!-- END OF GRID-CONTAINER -->
 
-    </main> <!-- END OF MAIN -->
+        <a href="#">Afficher plus</a>
+        
+    </section><!-- END OF SECTION HEBERGEMENTS -->
 
-       
+    <aside id="populaires">
+        <h2>Les plus populaires</h2> <i class="fas fa-chart-line"></i>
+    </aside>
+
     
+        
+
+</main> <!-- END OF MAIN -->
+
+   
 </body>
 </html>
