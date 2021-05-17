@@ -1,0 +1,255 @@
+/* GENERAL STYLING */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  background-color: #fff;
+  color: #404040;
+  font-family: 'Raleway', sans-serif;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #404040;
+}
+
+/* HEADER */
+
+.main-head {
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+}
+#nav-bar {
+  /* background-color: aqua; A SUPP APRES */
+  display: flex;
+  /* width: 90%;
+  margin: auto; */
+  /* padding: 1rem; */
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#nav-bar ul {
+  display: flex;
+  flex: 1 1 30rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+}
+#nav-bar .bold {
+  font-family: "Raleway";
+  font-weight: 700;
+}
+/* a:link {
+  color: #404040; 
+} */
+
+a:hover, a:focus {
+  color: #0065FC; 
+  font-family: "Raleway", sans-serif;
+}
+
+#logo {
+  flex: 2 1 40rem;
+}
+#logo img {
+  height: 3rem;
+}
+
+/* SECTION RECHERCHE */
+
+      /* CHOIX VILLES */
+
+#recherche {
+  height: 30vh;
+  margin-top: 2rem;
+}
+#recherche h2 {
+  padding: 1rem 0 0.5rem 0;
+  font-family: "Raleway";
+  color: #000;
+}
+#recherche p {
+  margin-bottom: 1rem;
+}
+.villes {
+  /* padding: 1rem 0; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  
+}
+.icon-input-button {
+  position: relative;
+  border: 1px solid #F2F2F2;
+  border-radius: 12px 0 0 12px;
+  font-family: "Raleway";
+  color: #000;
+}
+
+.icon-input-button i, 
+input, 
+button {
+  height: 38px;
+  /* padding: 1.5rem 1.5rem; */
+  font-size: 100%;
+  
+}
+.icon-input-button i {
+  background-color: #F2F2F2;
+  /* font-size: 10.5px; */
+  padding: 1.4rem;
+  border-radius: 9px 0 0 9px;
+  position: absolute;
+  left: 0px;
+  margin: 0;
+  
+}
+.icon-input-button input {
+  margin-left: 3rem;
+  border: none;
+  outline: none;
+  font-family: "Raleway";
+  color: #000;
+  /* font-size: 1.6rem; */
+}
+.icon-input-button button {
+  position: absolute;
+  padding: 1rem;
+  border-radius: 0 12px 12px 0;
+  background-color: #0065FC;
+  color: white;
+  outline: none;
+  border: solid 2px #0065FC;
+  font-family: "Raleway";
+  /* font-size: 1.6rem; */
+}
+
+      /* FILTRES */
+
+.filtres-cat {
+  width: 60%;
+  display: flex;
+  position: relative;
+  margin: 1rem 0;
+  justify-content: space-between;
+}
+.filtres-cat button {
+  margin: 0;
+  padding-left: 1rem; 
+  padding-right: 1rem;
+  border-radius: 50px;
+  border: 1px solid #F2F2F2;
+  background: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  justify-content: center;
+  color: black;
+}
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog {
+  margin: 0;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: #DEEBFF;
+  color: #0065FC;
+  position: relative;
+  right: 10.5px;
+}
+
+
+/* SECTION HEBERGEMENTS */
+
+#hebergements {
+  max-width: 60%;
+  margin-right: 5rem;
+  padding: 4rem 2rem;
+  background-color: #F2F2F2;
+  border-radius: 30px;
+}
+
+.grid-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+}
+#hebergements h2 {
+  padding: 1rem 0 0.5rem 0;
+  font-family: "Raleway";
+  color: #000;
+}
+.selection {
+  width: 22rem;
+  height: 20rem;
+  background-color: #fff;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+}
+.selection img{
+  width: 20rem;
+  margin: 0.5rem 1rem;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+.selection h3, p, i {
+  margin: 0 0 0.5rem 1rem;
+}
+.selection i {
+  color: #0065FC;
+}
+
+/* ASIDE */
+#populaires {
+  max-width: 30%;
+  padding: 4rem 2rem;
+  background-color: #F2F2F2;
+  border-radius: 30px;
+  position: relative;
+  float: right;
+}
+.popu {
+  width: 22rem;
+  height: 20rem;
+  background-color: #fff;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+}
+.popu-h2-i {
+  display: flex;
+}
+.popu img{
+  width: 15rem;
+  margin: 0.5rem;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+}
+.popu h3, p, i {
+  margin: 0 0 0.5rem 1rem;
+}
+.popu i {
+  color: #0065FC;
+}
+
+
