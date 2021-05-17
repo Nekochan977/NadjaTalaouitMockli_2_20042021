@@ -1,5 +1,6 @@
 /* GENERAL STYLING */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -110,23 +111,26 @@ a:hover, a:focus {
 .icon-input-button {
   position: relative;
   border: 1px solid #F2F2F2;
-  border-radius: 10px 0 0 10px;
+  border-radius: 12px 0 0 12px;
   font-family: "RalewayBold";
   color: #000;
 }
+
 .icon-input-button i, 
 input, 
 button {
   height: 38px;
-  padding: 1.5rem 1.5rem;
+  /* padding: 1.5rem 1.5rem; */
   font-size: 100%;
   
 }
 .icon-input-button i {
   background-color: #F2F2F2;
-  font-size: 10.5px;
-  border-radius: 10px 0 0 10px;
+  /* font-size: 10.5px; */
+  padding: 1.4rem;
+  border-radius: 9px 0 0 9px;
   position: absolute;
+  left: 0px;
   margin: 0;
   
 }
@@ -140,14 +144,14 @@ button {
 }
 .icon-input-button button {
   position: absolute;
-  border-radius: 0 10px 10px 0;
+  padding: 1rem;
+  border-radius: 0 12px 12px 0;
   background-color: #0065FC;
   color: white;
   outline: none;
   border: solid 2px #0065FC;
   font-family: "RalewayMed";
   /* font-size: 1.6rem; */
- 
 }
 
       /* FILTRES */
@@ -157,47 +161,41 @@ button {
   position: relative;
   margin: 1rem 0;
   justify-content: space-between;
-  z-index: 2 1 20px;
 }
 .filtres-cat button {
-  border-radius: 30px;
+  margin: 0;
+  padding-left: 1rem; 
+  padding-right: 1rem;
+  border-radius: 50px;
   border: 1px solid #F2F2F2;
   background: none;
   font-family: "RalewayBold";
-  z-index: 1 1 40px;
-  /* padding: 1rem; */
-  
-}
-.fa-circle {
-  font-size: 2.5rem;
-  color: #DEEBFF;
-  margin: 0;
-  position: relative;
+  justify-content: center;
 }
 .fa-money-bill-wave,
 .fa-child,
 .fa-heart,
 .fa-dog {
+  margin: 0;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: #DEEBFF;
   color: #0065FC;
-  position: absolute;
+  position: relative;
+  right: 10.5px;
 }
-.fa-stack {
-  font-size: 0.5rem;
-}
-i {
-  vertical-align: middle;
-}
+
 
 /* SECTION HEBERGEMENTS */
 
 #hebergements {
- 
-  width: 60%;
-  margin-right: 0;
+  max-width: 60%;
+  margin-right: 5rem;
   padding: 4rem 2rem;
   background-color: #F2F2F2;
   border-radius: 30px;
 }
+
 .grid-container {
   margin-top: 2rem;
   display: grid;
@@ -231,8 +229,38 @@ i {
   color: #0065FC;
 }
 
-
-
-
+/* ASIDE */
+#populaires {
+  max-width: 30%;
+  padding: 4rem 2rem;
+  background-color: #F2F2F2;
+  border-radius: 30px;
+  position: relative;
+  float: right;
+}
+.popu {
+  width: 22rem;
+  height: 20rem;
+  background-color: #fff;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+}
+.popu-h2-i {
+  display: flex;
+}
+.popu img{
+  width: 15rem;
+  margin: 0.5rem;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+}
+.popu h3, p, i {
+  margin: 0 0 0.5rem 1rem;
+}
+.popu i {
+  color: #0065FC;
+}
 
 
