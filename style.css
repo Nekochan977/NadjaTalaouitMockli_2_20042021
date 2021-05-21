@@ -6,13 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
-
 html {
   font-size: 62.5%;
 }
-
 body {
   width: 90%;
   height: 100%;
@@ -26,6 +22,14 @@ a {
   cursor: pointer;
   color: #404040;
 }
+li {
+  list-style: none;
+}
+/* img {
+  width: 20rem;
+  height: 14rem;
+  
+} */
 
 /* HEADER */
 
@@ -34,12 +38,8 @@ a {
   top: 0px;
   background-color: #fff;
 }
-#nav-bar {
-  /* background-color: aqua; A SUPP APRES */
+#nav-bar { 
   display: flex;
-  /* width: 90%;
-  margin: auto; */
-  /* padding: 1rem; */
   min-height: 10vh;
   align-items: center;
   flex-wrap: wrap;
@@ -49,22 +49,13 @@ a {
   flex: 1 1 30rem;
   justify-content: space-around;
   align-items: center;
-  list-style: none;
-  font-family: "Raleway", sans-serif;
 }
 #nav-bar .bold {
-  font-family: "Raleway";
   font-weight: 700;
 }
-/* a:link {
-  color: #404040; 
-} */
-
 a:hover, a:focus {
   color: #0065FC; 
-  font-family: "Raleway", sans-serif;
 }
-
 #logo {
   flex: 2 1 40rem;
 }
@@ -82,7 +73,6 @@ a:hover, a:focus {
 }
 #recherche h2 {
   padding: 1rem 0 0.5rem 0;
-  font-family: "Raleway";
   color: #000;
 }
 #recherche p {
@@ -98,7 +88,6 @@ a:hover, a:focus {
   position: relative;
   border: 1px solid #F2F2F2;
   border-radius: 12px 0 0 12px;
-  font-family: "Raleway";
   color: #000;
 }
 
@@ -106,9 +95,7 @@ a:hover, a:focus {
 input, 
 button {
   height: 38px;
-  /* padding: 1.5rem 1.5rem; */
   font-size: 100%;
-  
 }
 .icon-input-button i {
   background-color: #F2F2F2;
@@ -121,10 +108,9 @@ button {
   
 }
 .icon-input-button input {
-  margin-left: 3rem;
+  margin-left: 4rem;
   border: none;
   outline: none;
-  font-family: "Raleway";
   color: #000;
   /* font-size: 1.6rem; */
 }
@@ -136,7 +122,7 @@ button {
   color: white;
   outline: none;
   border: solid 2px #0065FC;
-  font-family: "Raleway";
+
   /* font-size: 1.6rem; */
 }
 
@@ -145,6 +131,7 @@ button {
 .filtres-cat {
   width: 60%;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin: 1rem 0;
   justify-content: space-between;
@@ -156,7 +143,6 @@ button {
   border-radius: 50px;
   border: 1px solid #F2F2F2;
   background: none;
-  font-family: "Raleway";
   font-weight: 700;
   justify-content: center;
   color: black;
@@ -178,35 +164,46 @@ button {
 /* SECTION HEBERGEMENTS */
 
 #hebergements {
-  max-width: 60%;
+  min-width: 90%;
+  max-height: fit-content;
+  display: flex;
+  /* margin-right: 5rem; */
+}
+
+.container {
+  /* margin: 0; */
+  width: max-content;
+  height: fit-content;
   margin-right: 5rem;
   padding: 4rem 2rem;
   background-color: #F2F2F2;
   border-radius: 30px;
 }
-
-.grid-container {
-  margin-top: 2rem;
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr;
-}
-#hebergements h2 {
+.container h2 {
   padding: 1rem 0 0.5rem 0;
   font-family: "Raleway";
   color: #000;
 }
+.container-selection {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*Modification 18 mai : rajout d'un margin, justify-items et justify content*/
 .selection {
   width: 22rem;
   height: 20rem;
+  margin: 0.5rem;
   background-color: #fff;
   object-fit: contain;
   align-items: center;
   border-radius: 10px;
+  justify-items: center;
+  justify-content: space-around;
 }
 .selection img{
   width: 20rem;
+  height: 14rem;
   margin: 0.5rem 1rem;
   align-items: center;
   border-radius: 10px 10px 0 0;
@@ -219,37 +216,52 @@ button {
 }
 
 /* ASIDE */
+
 #populaires {
-  max-width: 30%;
+  max-width: fit-content;
+  max-height: fit-content;
+  /* margin: 0; */
   padding: 4rem 2rem;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 30px;
   position: relative;
-  float: right;
+  /* left: 600px;
+  bottom: 80rem; */
+}
+.container-popu {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.popu-h2-i {
+  display: inline-flex;
 }
 .popu {
-  width: 22rem;
+  width: 30rem;
   height: 20rem;
+  margin: 1rem;
   background-color: #fff;
   object-fit: contain;
   align-items: center;
   border-radius: 10px;
-}
-.popu-h2-i {
-  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  display: inline-table;
+  flex-direction: row;
 }
 .popu img{
+  display: inline;
   width: 15rem;
   margin: 0.5rem;
   align-items: center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 0 0 10px;
   object-fit: contain;
 }
 .popu h3, p, i {
   margin: 0 0 0.5rem 1rem;
+  
 }
 .popu i {
   color: #0065FC;
 }
-
-
