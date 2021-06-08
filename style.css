@@ -10,12 +10,10 @@ html {
   font-size: 62.5%;
 }
 body {
-  width: 90%;
-  height: 100%;
-  margin: auto;
   background-color: #fff;
   color: #404040;
   font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
 }
 a {
   text-decoration: none;
@@ -25,20 +23,25 @@ a {
 li {
   list-style: none;
 }
-/* img {
-  width: 20rem;
-  height: 14rem;
-  
-} */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* CREATION DE DIVE WHOLE POUR APPLIQUER UNE WIDTH/ HEIGHT ET MARGIN SANS IMPACTER LE FOOTER */
+.whole {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+}
 
 /* HEADER */
 
 .main-head {
-  position: sticky;
   top: 0px;
   background-color: #fff;
+  padding: 1rem 0;
 }
-#nav-bar { 
+#nav-bar {
   display: flex;
   min-height: 10vh;
   align-items: center;
@@ -46,21 +49,31 @@ li {
 }
 #nav-bar ul {
   display: flex;
-  flex: 1 1 30rem;
+  flex: 1 1 0rem;
   justify-content: space-around;
   align-items: center;
 }
+#nav-bar li {
+  margin-left: 5rem;
+}
 #nav-bar .bold {
   font-weight: 700;
+  color: #0065FC;
+}
+#nav-bar a {
+  padding: 2rem;
 }
 a:hover, a:focus {
-  color: #0065FC; 
+  color: #0065FC;
+}
+#nav-bar a:hover {
+  border-top: solid 0.3rem #0065FC;
 }
 #logo {
   flex: 2 1 40rem;
 }
 #logo img {
-  height: 3rem;
+  height: 4rem;
 }
 
 /* SECTION RECHERCHE */
@@ -69,9 +82,12 @@ a:hover, a:focus {
 
 #recherche {
   height: 30vh;
+  width: max-content;
   margin-top: 2rem;
+  object-fit: contain;
+  display: contents; /* Plutôt pour grid et rend peut-être l'élément non accessible... */
 }
-#recherche h2 {
+#recherche h2, h3 {
   padding: 1rem 0 0.5rem 0;
   color: #000;
 }
@@ -79,10 +95,8 @@ a:hover, a:focus {
   margin-bottom: 1rem;
 }
 .villes {
-  /* padding: 1rem 0; */
   display: flex;
-  /* flex-wrap: wrap; */
-  
+  width: 40%;
 }
 .icon-input-button {
   position: relative;
@@ -91,28 +105,25 @@ a:hover, a:focus {
   color: #000;
 }
 
-.icon-input-button i, 
-input, 
+.icon-input-button i,
+input,
 button {
   height: 38px;
   font-size: 100%;
 }
 .icon-input-button i {
   background-color: #F2F2F2;
-  /* font-size: 10.5px; */
   padding: 1.4rem;
   border-radius: 9px 0 0 9px;
   position: absolute;
   left: 0px;
   margin: 0;
-  
 }
 .icon-input-button input {
   margin-left: 4rem;
   border: none;
   outline: none;
   color: #000;
-  /* font-size: 1.6rem; */
 }
 .icon-input-button button {
   position: absolute;
@@ -122,8 +133,6 @@ button {
   color: white;
   outline: none;
   border: solid 2px #0065FC;
-
-  /* font-size: 1.6rem; */
 }
 
       /* FILTRES */
@@ -133,19 +142,25 @@ button {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  margin: 1rem 0;
-  justify-content: space-between;
+  margin: 2rem 1.5rem;
+  /* justify-content: space-between; */
 }
-.filtres-cat button {
-  margin: 0;
-  padding-left: 1rem; 
+
+.btn {
+  margin: 0 2rem;
+  padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 50px;
   border: 1px solid #F2F2F2;
   background: none;
-  font-weight: 700;
+  font-weight: 600;
   justify-content: center;
   color: black;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #3e86f1;
+  color: #fff;
 }
 .fa-money-bill-wave,
 .fa-child,
@@ -157,111 +172,304 @@ button {
   background-color: #DEEBFF;
   color: #0065FC;
   position: relative;
-  right: 10.5px;
+  right: 10.7px;
+  bottom: 0.1rem;
+}
+
+.info {
+  display: flex;
+  margin: 2rem 1.5rem;
+}
+.info-icon {
+  margin: 0 2rem 0 0;
+  background-color: #fff;
+  color: #0065FC;
+  width: 2.1rem;
+  height: 2.1rem;
+  align-items: center;
+  padding: 0.1rem 0.7rem;
+  border-radius: 50%;
+  border: 0.1rem solid #cfcfcf;
 }
 
 
 /* SECTION HEBERGEMENTS */
 
 #hebergements {
-  min-width: 90%;
-  max-height: fit-content;
   display: flex;
-  /* margin-right: 5rem; */
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .container {
-  /* margin: 0; */
-  width: max-content;
-  height: fit-content;
-  margin-right: 5rem;
-  padding: 4rem 2rem;
+  width: 60%;
+  height: auto;
   background-color: #F2F2F2;
   border-radius: 30px;
-}
-.container h2 {
-  padding: 1rem 0 0.5rem 0;
-  font-family: "Raleway";
-  color: #000;
+  padding: 3rem;
 }
 .container-selection {
-  margin-top: 2rem;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-/*Modification 18 mai : rajout d'un margin, justify-items et justify content*/
 .selection {
-  width: 22rem;
-  height: 20rem;
-  margin: 0.5rem;
+  width: 23.5rem;
+  height: 22rem;
+  margin: 2rem 0;
   background-color: #fff;
   object-fit: contain;
   align-items: center;
-  border-radius: 10px;
-  justify-items: center;
-  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 1px #cfcfcf;
+  position: relative;
+}
+.selection:hover {
+  box-shadow: 5px 5px 5px 5px #cfcfcf;
+}
+
+.selection a {
+  width: 19rem;
+  height: 20rem;
+  object-fit: contain;
 }
 .selection img{
-  width: 20rem;
+  width: 22.5rem;
   height: 14rem;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
   align-items: center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
 }
-.selection h3, p, i {
-  margin: 0 0 0.5rem 1rem;
+.selection-description {
+  margin-left: 1rem;
 }
-.selection i {
+.selection-description > h3,
+p, i {
+  padding: 0.3rem 0;
+}
+.selection-description i {
   color: #0065FC;
 }
 
 /* ASIDE */
 
 #populaires {
-  max-width: fit-content;
-  max-height: fit-content;
-  /* margin: 0; */
-  padding: 4rem 2rem;
-  background-color: #f2f2f2;
-  border-radius: 30px;
+  width: 35%;
+  height: auto;
+  display: flex;
   position: relative;
-  /* left: 600px;
-  bottom: 80rem; */
+  /* background-color: #F2F2F2;
+  border-radius: 30px;  */
+}
+.aside-container {
+  background-color: #F2F2F2;
+  border-radius: 30px;
+  padding: 3rem;
+ 
+}
+.aside-container h2> i {
+  margin-left: 20rem;
 }
 .container-popu {
-  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-}
-.popu-h2-i {
-  display: inline-flex;
+  justify-content: space-between;
 }
 .popu {
-  width: 30rem;
-  height: 20rem;
-  margin: 1rem;
+  margin: 2rem 0;
   background-color: #fff;
   object-fit: contain;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 1px #cfcfcf;
   justify-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-  display: inline-table;
-  flex-direction: row;
+  position: relative;
 }
-.popu img{
-  display: inline;
-  width: 15rem;
-  margin: 0.5rem;
-  align-items: center;
-  border-radius: 10px 0 0 10px;
+.popu:hover {
+  box-shadow: 5px 5px 5px 5px #cfcfcf;
+}
+.popu a {
+  display: inline-flex;
+  width: 40rem;
+  height: 15rem;
   object-fit: contain;
 }
-.popu h3, p, i {
-  margin: 0 0 0.5rem 1rem;
-  
+.popu img {
+  width: 16.5rem;
+  height: 14rem;
+  margin: 0.5rem 0.5rem;
+  align-items: center;
+  border-radius: 15px 0px 0px 15px;
+}  
+.description {
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
-.popu i {
+.description > h3,
+p, i {
+  padding: 0.3rem 0;
+}
+.description i {
+  margin-top: 5rem;
   color: #0065FC;
 }
+.more {
+padding: 2rem 0;
+}
+
+/* SECTION ACTIVITES */
+
+#activites {
+width: 100%;
+height: auto;
+margin: 4rem 0;
+}
+#activites h2 {
+width: 100%;
+padding: 2rem 0;
+}
+.container-cartes {
+height: auto;
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 21rem 21rem;
+gap: 30px;
+}
+.carte {
+height: max-content;
+}
+.carte a:hover {
+box-shadow: 5px 5px 5px 5px #cfcfcf;
+}
+.carte h3 {
+margin-left: 2.5rem;
+}
+.carte a {
+display: block;
+width: 32rem;
+background-color: #fff;
+border-radius: 20px;
+box-shadow: 1px 1px 5px 1px #cfcfcf;
+object-position: inherit;
+/* position: absolute; */
+}
+.carte img {
+/* width: 100%;
+height: 30rem; */
+object-fit: cover;
+border-radius: 20px 20px 0 0;
+}
+.port img {
+width: 100%;
+height: 41.5rem;
+}
+.port {
+grid-row: 1 / 2;
+}
+.pomegues img {
+width: 100%;
+height: 20rem;
+}
+.frioul {
+grid-column: 2;
+grid-row: 2;
+align-self: end;
+}
+.frioul img {
+width: 100%;
+height: 13rem;
+}
+.calanques img {
+width: 100%;
+height: 41.5rem;
+}
+.notre-dame img {
+width: 100%;
+height: 16.5rem;
+}
+.longchamp {
+grid-column: 4;
+align-self: end;
+}
+.longchamp img {
+width: 100%;
+height: 16.5rem;
+}
+
+
+footer {
+display: flex;
+flex-wrap: wrap;
+background-color: rgb(239, 239, 239);
+width: 100%;
+height: 100%;
+}
+footer h3,
+li {
+margin-bottom: 1rem;
+}
+.a-propos {
+padding: 3rem 3rem;
+}
+.nos-herbergements {
+padding: 3rem 0 3rem 30rem;
+}
+.assistance {
+padding: 3rem 0 3rem 30rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) and (max-width: 736px){
+/* body {
+font-size: inherit;
+} */
+#logo {
+position: absolute;
+top: 1rem;
+}
+#nav-bar ul {
+display: flex;
+justify-content: space-around;
+/* flex-wrap: wrap-reverse; */
+top: 3rem;
+}
+#nav-bar li {
+margin: 5rem 0 1rem 0;
+}
+#nav-bar a {
+padding: 0;
+}
+.one {
+padding: 0;
+}
+.two a{
+padding: 0 5rem;
+}
+.bold {
+position: absolute;
+top: 2rem;
+right: 2rem;
+}
+#hebergement {
+flex-direction: column;
+}
+.container {
+background-color: #fff;
+flex: 0 1 600px;
+order: 2;
+height: auto;
+}
+.container-selection {
+width: 100%;
+}
+  
+#populaires {
+order: -1;
+}
+.container-cartes {
+display:flex;
+    flex-direction:column
+  }
+} 
