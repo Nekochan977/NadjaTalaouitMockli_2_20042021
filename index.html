@@ -22,11 +22,13 @@
             <div id="logo">
                 <img src="./images/logo/Reservia.svg" alt="Logo">
             </div>
+            
                 <ul>
                     <li class="one"><a href="#hebergements">Hébergements</a></li>
                     <li class="two"><a href="#activites">Activités</a></li>
                     <li class="three"><a class="bold" href="#">S'inscrire</a></li>
                 </ul>
+        
         </nav>  <!-- END OF NAV-BAR -->
     </header> <!-- END OF MAIN-HEAD -->
         
@@ -34,20 +36,21 @@
     <main>
         <!-- SECTION1 RECHERCHE -->
         <section id="recherche">
-            
+    
+        
             <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
             <p>En plein centre ville ou en pleine nature</p>
     
             <!-- VILLES -->
             <div class="villes">
-                <form action="" method="get">
-                    <label for="icon-input">
+                <form action="#" method="get">
+                    
                         <div class="icon-input-button">
                             <i class="fas fa-map-marker-alt"></i>
-                            <input type="search" placeholder="Ex. Paris">
-                            <button>Rechercher</button>
+                            <input type="search" placeholder="Marseille, France">
+                            <button> <span class="btn-text">Rechercher</span> <i class="fas fa-search"></i></button>
                         </div>
-                    </label>
+                    
                 </form>
             </div> <!-- END OF VILLES-->
     
@@ -55,18 +58,24 @@
             <div class="filtres-cat"> <!-- Vraiment la bonne disposition ?-->
                 <h3>Filtres </h3>
     
-                <!-- BTN ECO -->
-                <button class="btn" disabled><i class="fas fa-money-bill-wave"></i>Économique</button> <!-- END OF BTN ECO-->
-                <!-- BTN FAM -->
-                <button class="btn" disabled><i class="fas fa-child"></i>Familial
-                </button> <!-- END OF BTN FAM-->
-                <!-- BTN ROM -->
+                <!-- ECO-FAM CONTAINER -->
+                <div class="eco-fam">
+                    <!-- BTN ECO -->
+                    <button class="btn" disabled><i class="fas fa-money-bill-wave"></i>Économique</button> <!-- END OF BTN ECO-->
+                    <!-- BTN FAM -->
+                    <button class="btn" disabled><i class="fas fa-child"></i>Familial 
+                    </button> <!-- END OF BTN FAM-->
+                    <!-- BTN ROM -->
+                </div> <!-- END OF ECO-FAM CONTAINER -->
                 <button class="btn" disabled><i class="fas fa-heart"></i>Romantique
                 </button> <!-- END OF BTN ROM-->
                 <!-- BTN ANI -->
                 <button class="btn" disabled><i class="fas fa-dog"></i>Animaux autorisés
                 </button><!-- END OF BTN ANI-->
+               
             </div> <!-- END OF FILTRES -->
+    
+        
     
             <!-- INFO -->
             <article class="info">
@@ -78,7 +87,7 @@
                
         </section> <!-- END OF SECTION1 RECHERCHES -->
     
-        <!-- SECTION HEBERGEMENTS -->
+        <!-- SECTION 2 HEBERGEMENTS -->
         <section id="hebergements">
             <!-- container -->
             <div class="container">
