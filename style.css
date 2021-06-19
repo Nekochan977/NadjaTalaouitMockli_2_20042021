@@ -125,7 +125,7 @@ button {
 }
 .icon-input-button button {
   position: absolute;
-  left: 18rem;
+  left: 20rem;
   padding: 1rem;
   border-radius: 0 12px 12px 0;
   background-color: #0065FC;
@@ -512,6 +512,7 @@ li {
     padding: 3rem 0 3rem 11rem;
   }
 
+
 }
 
 @media screen and (max-width: 736px){
@@ -576,7 +577,6 @@ li {
   /* VILLES */
 
   .villes {
-    width: 100%;
     margin-top: 2rem;
   }
   input {
@@ -587,7 +587,6 @@ li {
   }
   .icon-input-button button {
     border-radius: 10px;
-    left: 18rem;
   }
    .fa-search {
     display: contents;
@@ -620,7 +619,7 @@ li {
   }
   .container {
     background-color: #fff;
-    flex: 0 1 600px;
+    width: 100%;
     order: 2;
     height: auto;
     padding: inherit;
