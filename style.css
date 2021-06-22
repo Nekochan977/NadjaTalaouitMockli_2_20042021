@@ -405,7 +405,7 @@ li {
 .a-propos {
   padding: 3rem 3rem;
 }
-.nos-herbergements {
+.nos-hebergements {
   padding: 3rem 0 3rem 30rem;
 }
 .assistance {
@@ -505,7 +505,7 @@ li {
 
   /* FOOTER */
 
-  .nos-herbergements {
+  .nos-hebergements {
     padding: 3rem 0 3rem 11rem;
   }
   .assistance {
@@ -659,10 +659,10 @@ li {
     padding: 2rem 0; 
   }
   .aside-container h2 {
-    margin: 1rem 3rem;
+    margin: 1rem 4rem;
   }
   .aside-container h2>i {
-    margin-left: 9rem;
+    margin-left: 10rem;
   }
   .container-popu {
     justify-content: space-evenly;
@@ -727,7 +727,7 @@ li {
   .a-propos {
     padding: 1rem 3rem;
   }
-  .nos-herbergements {
+  .nos-hebergements {
     padding: 1rem 3rem;
   }
   .assistance {
